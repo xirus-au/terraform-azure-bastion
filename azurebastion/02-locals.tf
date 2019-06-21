@@ -1,0 +1,7 @@
+locals {
+  common_tags = map(
+    "COSTCENTRE", var.CUSTOMER_COSTCENTRE,
+    "APPLICATION", var.CUSTOMER_APPLICATION,
+    "ENVIRONMENT", var.ARM_ENVIRONMENT_NAME
+  )
+}
