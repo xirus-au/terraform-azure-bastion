@@ -61,7 +61,7 @@ resource "azurerm_template_deployment" "bastion" {
     "ENVIRONMENT": {
       "type": "string",
       "defaultValue": ""
-    },
+    }
   },
   "variables": {
     "subnetRefId": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('bastionServicesVnetName'), parameters('bastionServicesSubnetName'))]"
